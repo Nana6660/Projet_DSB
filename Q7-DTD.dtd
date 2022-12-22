@@ -1,0 +1,15 @@
+<!ELEMENT cinema (documentation+,film)>
+<!ATTLIST cinema idCinema ID #REQUIRED
+nom CDATA #REQUIRED
+adresse CDATA #REQUIRED>
+
+<!ELEMENT documentation(#PCDATA|lien)>
+<!ATTLIST documentation date Date #IMPLIED 
+auteur CDATA #IMPLIED >
+<!ELEMENT lien (#PCDATA)>
+
+<!ELEMENT film (#PCDATA|documentation*) >
+<!ATTLIST film idFilm ID #REQUIRED 
+titre CDATA #REQUIRED 
+dateDeSortie DATE #REQUIRED 
+durée TIME #REQUIRED>

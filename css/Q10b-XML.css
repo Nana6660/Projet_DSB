@@ -1,0 +1,587 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI";
+  background-color: rgb(231, 230, 230);
+}
+
+.header {
+  color: white;
+  height: 520px;
+  background-image: url("./../image/rows-red-seats-theater.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.prestations {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.header .fixed {
+  margin-left: 7.4%;
+  position: fixed;
+  z-index: 1;
+}
+
+.imagesPrestations {
+  background-color: rgb(228, 228, 228);
+  position: relative;
+  margin: 5px 5px 75px 5px;
+
+  cursor: pointer;
+  height: 330px;
+  width: 235px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.imagesPrestations .detail {
+  position: relative;
+  top: -45px;
+  color: aliceblue;
+  height: 20px;
+  width: 100%;
+  padding: 7px 0px 14px 0px;
+  background-color: #960707;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.7s;
+  border-radius: 0px 0px 5px 5px;
+  display: none;
+}
+
+.imagesPrestations .titre {
+  font-weight: 650;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.imagesPrestations:hover .detail {
+  display: block;
+}
+
+.imagesPrestations:hover .titre {
+  top: -45px;
+}
+
+.imagesPrestations h4 {
+  position: absolute;
+}
+
+.imagesPrestations img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.imagesPrestations:hover {
+  height: 360px;
+  width: 260px;
+  margin: 0px;
+}
+
+.left {
+  float: left;
+  margin-left: 4%;
+}
+
+.right {
+  position: relative;
+  top: 20px;
+  float: right;
+  margin-right: 4%;
+}
+.connexion {
+  margin-right: 20px;
+}
+
+.connexion .login {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+.connexion .register {
+  padding: 2px 20px 5px 20px;
+  border-radius: 10px;
+  background-color: #ffffff38;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.connexion .register:hover {
+  background-color: #ffffff67;
+}
+
+.avatar {
+  background-color: rgb(46, 45, 45);
+  border-radius: 100%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+}
+
+.navbar .avatar2 {
+  background-color: rgb(46, 45, 45);
+  border-radius: 100%;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: 7px;
+  cursor: pointer;
+  right: 65px;
+  display: none;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav select {
+  text-align: center;
+  margin: 0 0 0 20px;
+  height: 30px;
+  width: 180px;
+  margin-top: 23px;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: rgba(116, 116, 116, 0.068);
+  font-weight: 600;
+}
+.option {
+}
+.detailFilms {
+  display: none;
+}
+.avatar i {
+  font-size: 3em;
+  color: rgba(104, 104, 104, 0.829);
+  margin-left: -3px;
+  margin-top: 3px;
+}
+
+.fixed .avatar2 i {
+  font-size: 2em;
+  color: rgba(182, 182, 182, 0.829);
+  margin-left: -2px;
+  margin-top: 3px;
+}
+.navbar {
+  margin-left: 4%;
+  width: 96%;
+  background-color: rgba(0, 0, 0, 0.808);
+  overflow: auto;
+  transition: top 0.7s;
+}
+.info {
+  margin-top: 140px;
+  margin-bottom: 50px;
+  width: 500px;
+}
+.info .plus {
+  height: 20px;
+  width: 180px;
+  padding: 7px 20px 14px 20px;
+  border-radius: 10px;
+  background-color: #960707;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.info .plus:hover {
+  background-color: #9c0101b6;
+}
+.info .plus a {
+  text-decoration: none;
+  font-family: "Segoe UI";
+  color: black;
+  font-size: 1.1em;
+  font-weight: 550;
+}
+.titre h1 {
+  margin-top: -30px;
+}
+.titre h5 {
+  font-family: cursive;
+}
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 15px 5% 15px 5%;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.header .fixed a {
+  color: rgb(0, 0, 0);
+}
+.navbar a:hover {
+  background-color: rgba(49, 49, 49, 0.842);
+}
+
+.fixed a:hover {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+.navbar .searchi:hover {
+  background-color: rgba(255, 255, 255, 0.267);
+  color: rgba(228, 227, 227, 0.904);
+}
+
+.navbar a i {
+  font-size: 2em;
+}
+
+.navbar .searchi {
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  padding: 6px;
+  background-color: rgba(255, 255, 255, 0.205);
+  color: rgba(255, 255, 255, 0.904);
+  margin-left: 10px;
+  position: relative;
+  top: 6px;
+  text-decoration: none;
+  font-size: 15px;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.navbar .search {
+  float: right;
+  background-color: none;
+}
+
+.fixed .search {
+  position: relative;
+  left: 10px;
+}
+
+.navbar .search input[type="text"] {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.205);
+}
+
+.navbar .search input[placeholder] {
+  color: rgba(255, 255, 255, 0.904);
+}
+
+.navbar input[type="text"] {
+  padding: 12px;
+  border: none;
+  font-size: 15px;
+  background-color: #ffffffb2;
+}
+.navbar .search input {
+  float: right;
+  margin: 6px 6px 6px 0px;
+}
+
+.fixed .search input[type="text"] {
+  background-color: rgba(0, 0, 0, 0.123);
+}
+
+.fixed .search input[placeholder] {
+  color: rgba(29, 29, 29, 0.904);
+}
+
+.fixed .searchi:hover {
+  background-color: rgba(0, 0, 0, 0.267);
+  color: rgba(0, 0, 0, 0.904);
+}
+
+.fixed .searchi {
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.123);
+  color: rgba(0, 0, 0, 0.904);
+  margin: 0;
+  position: relative;
+  top: 6px;
+  text-decoration: none;
+  font-size: 15px;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar .active {
+  border-bottom: solid 3px #c50505;
+  color: #a10c0c;
+}
+.active i {
+  color: #a10c0c;
+}
+
+.header .fixed {
+  background-color: rgb(255, 255, 255);
+}
+
+.fixed a {
+  float: left;
+  text-align: center;
+  padding: 15px 4.5% 15px 4.5%;
+}
+.section {
+  background-color: rgb(248, 248, 244);
+  margin-left: 4%;
+  padding: 10px 0px 35px 35px;
+}
+.footer {
+  text-align: center;
+  background-color: #720606;
+  padding: 10px 0px 35px 35px;
+  height: 80px;
+}
+.footer p {
+  position: relative;
+  top: 50px;
+}
+.section1 {
+  position: relative;
+  top: -51px;
+}
+
+.section2 {
+  position: relative;
+  top: 50px;
+}
+
+.section2 h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.form input[type="text"],
+.form select,
+.form textarea,
+.form input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.form input[type="submit"] {
+  background-color: #960707;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #bb0b0b;
+}
+
+.form {
+  margin: auto;
+  width: 700px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.logo {
+  height: 150px;
+  float: left;
+  position: fixed;
+  top: -52px;
+  z-index: 2;
+  left: -10px;
+  display: none;
+}
+
+.detailFilms {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.detailFilms-contenu {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fefefe;
+  margin: 3% auto;
+  padding: 30px;
+  background-image: url("./../image/rows.jpg");
+  border-radius: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 500px;
+}
+.Listcinema {
+  background-color: #fefefe;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 30px;
+}
+.section3 {
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.detailFilms-contenu .information {
+  margin: 0;
+  float: left;
+  color: white;
+}
+
+.detailFilms-contenu .information h1 {
+  position: relative;
+  top: 30px;
+  width: 480px;
+  font-size: 2.2em;
+  text-align: justify;
+}
+.informationcinema {
+  margin-top: 30px;
+  margin-left: 30px;
+  float: left;
+}
+.informationcinema h1 {
+  width: 480px;
+  margin: 0;
+  font-size: 2.5em;
+  text-align: justify;
+}
+.infofilm {
+  position: relative;
+  top: 20px;
+  width: 480px;
+  text-align: justify;
+}
+.resume {
+  position: relative;
+  top: 30px;
+  text-align: justify;
+  width: 520px;
+  max-height: 150px;
+}
+.infocinema {
+  position: relative;
+  top: -15px;
+}
+.flex {
+  display: flex;
+  position: relative;
+  top: 50px;
+}
+
+.informationcinema .voirplus {
+  background-color: #000000ea;
+  color: white;
+  width: 80px;
+  height: 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px 10px 10px 20px;
+}
+.informationcinema .flex {
+  position: relative;
+  top: 25px;
+}
+.informationcinema .seance {
+  position: relative;
+  top: -6px;
+  width: 170px;
+  margin-left: 20px;
+  border-radius: 25px;
+  padding: 10px 10px 10px 18px;
+  background-color: #8d0808;
+  font-weight: 700;
+  cursor: pointer;
+}
+.detailFilms-contenu .image {
+  float: right;
+}
+.detailFilms-contenu .image img {
+  width: 380px;
+  height: 500px;
+}
+
+.Listcinema .image {
+  float: right;
+  height: 100%;
+}
+.Listcinema .image img {
+  width: 650px;
+  height: 100%;
+}
+.close {
+  color: rgb(218, 218, 218);
+  float: right;
+  position: relative;
+  font-size: 28px;
+  top: -25px;
+  left: 10px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(77, 76, 76);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.voirplus {
+  position: relative;
+  top: -5px;
+  width: 80px;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 10px 10px 20px;
+  background-color: #fefefe33;
+}
+
+.seance {
+  position: relative;
+  top: -5px;
+  width: 110px;
+  margin-left: 30px;
+  border-radius: 25px;
+  padding: 10px 10px 10px 30px;
+  background-color: #8d0808;
+  font-weight: 700;
+  cursor: pointer;
+}
+.seance .fa-clock-o {
+  font-size: 1.2em;
+  position: relative;
+  top: 1px;
+  margin-right: 3px;
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
